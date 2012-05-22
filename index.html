@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="My name is Brett. I'm a web developer and designer from New Jersey currently studying at the University of Illinois. Check out some things I've made.">
+		<meta name="google-site-verification" content="Q3OCKYfhyEEIz-X_r0MFWmVJDhWaEmAPgwiIAY5dvr8" />
+		<title>brett jurgens. awesome.</title>
+		<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore|The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+		<link href="css/new.css" rel="stylesheet" type="text/css">
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+		<![endif]-->
+		<script type="text/javascript" src="js/bjquery.js"></script>
+	</head>
+
+	<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+		<div id="home" class="current">
+			<span class="hid" id="1">hello there.<br /></span>
+			<span class="hid move" id="2">i'm <a id="aboutload" class="pro pointer" onClick="changeView('about')">brett jurgens</a>. <div id="aa" class="homearrow"></div><br /></span>
+			<span class="hid" id="3">i <span class="graytal">tell</span> people that i'm a <span class="pro">programmer</span>.<br /></span>
+			<span class="hid" id="4">i also <span class="graytal">think</span> that i'm a <span class="pro">designer</span>.<br /></span>
+			<span class="hid move" id="5"><a id="portload" class="pointer" onClick="changeView('portfolio')">judge for yourself.</a> <div id="pa" class="homearrow"></div></span>
+		</div>
+		<div id="portfolio"></div>
+		<div id="about"></div>
+		<div id="footer">
+			<div class="foot">brett jurgens 
+				<span id="fnavcont">
+					<span onClick="changeView('home')" id="hnav" class="fnav currentfnav">home</span> 
+					<span onClick="changeView('about')" id="anav" class="fnav">about</span>
+					<span onClick="changeView('portfolio')" id="pnav" class="fnav">portfolio</span>
+				</span>
+			</div>
+			<div class="copy">&copy;2012<a href="https://plus.google.com/117000088450345843512" rel="author"></a></div><div id="profile" xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person"><span property="v:name">Brett Jurgens</span><a rel="v:url">www.brettjurgens.com</a><span rel="v:address"><span typeof="v:Address"><span property="v:locality">Champaign</span><span property="v:region">IL</span></span></span></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	
+	/***************************************
+		Here be my javascript (jQuery)
+		Don't steal it :)
+		Copyright (c)2012 Brett Jurgens
+	***************************************/
+	if(window.location.hash) {
+		if(window.location.hash == '#about' || window.location.hash == '#portfolio' || window.location.hash == '#home')
+			getIt(window.location.hash.substring(1));
+	}
+	$(function(){
+		brettjurgens($('.hid').length);  // I'm a function, everybody! ZOMGLOL!!!!! -_-   // value could be hardcoded, but that's no fun.
+	});
+	</script>
+</html>
+<!-- 
+     Surrender to the city of the fireflies
+-->

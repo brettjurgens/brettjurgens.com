@@ -1,0 +1,127 @@
+<div id="mbploader"><img src="images/mbp.png" /></div>
+<div id="portfolioLoaded">
+	<div id="navwrap">
+		<div id="portfolionav" class="nav">
+			<a onClick="changeView('home')">Home</a> 
+			<span class="arrow">></span> 
+			Portfolio
+			<span class="arrow">></span> 
+			<span id="site">batchdefine</span>
+		</div>
+	</div>
+	<div id="siteWrapper">
+		<div id="batchdefine" class="unselectedSite">
+			<div class="title">batchdefine <a class="view" href="http://batchdefine.com" target="_blank">Visit Site!</a></div>
+			<div class="desc">a website that allows you to easily and efficiently find the definitions to a list of words</div>
+			<div class="sidewrap">
+				<div id="skills">
+					<div class="feature">Skills:</div>
+					<ul id="skillsList">
+						<li class="featureDesc">jQuery</li>
+						<li class="featureDesc">PHP</li>
+						<li class="featureDesc">MySQL</li>
+						<li class="featureDesc">Photoshop</li>
+						<li class="featureDesc">XML/JSON</li>
+						<li class="featureDesc">OpenGraph</li>
+					</ul>
+				</div>
+				<div id="techDesc">
+					<div class="feature">Technical Description:</div>
+					<div class="featureDesc">Uses jQuery to make AJAX calls to the dictionary.com API. The result is then parsed using jQuery.</div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="mbp">
+					<div class="siteimage"><img src="images/batchdefinembp.png" /></div>
+				</div>
+			</div>
+		</div>
+		<!-- End BDef / Start MovieAggregator -->
+		<div id="movieaggregator" class="unselectedSite">
+			<div class="title">movieaggregator <a class="view" href="http://movieaggregator.com" target="_blank">Visit Site!</a></div>
+			<div class="desc">a website that aggregates movie information, developed in 24 hours</div>
+			<div class="sidewrap">
+				<div id="skills">
+					<div class="feature">Skills:</div>
+					<ul id="skillsList">
+						<li class="featureDesc">jQuery</li>
+						<li class="featureDesc">PHP</li>
+						<li class="featureDesc">Photoshop</li>
+						<li class="featureDesc">XML/JSON</li>
+					</ul>
+				</div>
+				<div id="techDesc">
+					<div class="feature">Technical Description:</div>
+					<div class="featureDesc">Developed as part of a facebook hackathon, MovieAggregator uses jQuery to make AJAX calls to 6 different APIs and compiles the data in an organized fashion.</div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="mbp">
+					<div class="siteimage"><img src="images/movieaggregatormbp.png" /></div>
+				</div>
+			</div>
+		</div>
+		<!-- End MovieAggregator / Start MTD -->
+		<div id="mtd" class="unselectedSite">
+			<div class="title">Champaign-Urbana MTD Mobile App <a class="view" href="http://chambanabus.com" target="_blank">Visit Site!</a></div>
+			<div class="desc">the perfect mobile web app for MTD riders</div>
+			<div class="sidewrap">
+				<div id="skills">
+					<div class="feature">Skills:</div>
+					<ul id="skillsList">
+						<li class="featureDesc">jQuery</li>
+						<li class="featureDesc">Geolocation</li>
+						<li class="featureDesc">Mobile Development</li>
+						<li class="featureDesc">Photoshop</li>
+						<li class="featureDesc">XML/JSON</li>
+					</ul>
+				</div>
+				<div id="techDesc">
+					<div class="feature">Technical Description:</div>
+					<div class="featureDesc">This app uses the MTD API to help riders find the plan trips, see coming buses, and find local stops.</div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="iphone">
+					<div class="siteimage"><img src="images/mtd.png" /></div>
+				</div>
+			</div>
+		</div>
+		<!-- End MTD / Start ProCosmicXy -->
+		<div id="procosmicxy" class="unselectedSite">
+			<div class="title">ProCosmicXy <a class="view" href="http://procosmicxy.info" target="_blank">Visit Site!</a></div>
+			<div class="desc">an easy to look at proxy with powerful features, based on glype</div>
+			<div class="sidewrap">
+				<div id="skills">
+					<div class="feature">Skills:</div>
+					<ul id="skillsList">
+						<li class="featureDesc">jQuery</li>
+						<li class="featureDesc">PHP</li>
+						<li class="featureDesc">Photoshop</li>
+					</ul>
+				</div>
+				<div id="techDesc">
+					<div class="feature">Technical Description:</div>
+					<div class="featureDesc">This is a simple glype proxy, but unlike others it features unobtrusive advertisements and a clean design.</div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="mbp">
+					<div class="siteimage"><img src="images/xy.png" /></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<ul id="siteList">
+		<li load="batchdefine" class="selected">batchdefine</li> | 
+		<li load="movieaggregator" class="unselected">movieaggregator</li> | 
+		<li load="mtd" class="unselected">Bus App</li> | 
+		<li load="procosmicxy" class="unselected">ProCosmicXy</li>
+	</ul>
+</div>
+<script type="text/javascript">
+$( function(){
+	portfolio();
+});
+</script>
