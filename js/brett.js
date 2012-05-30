@@ -47,9 +47,11 @@
   function changeView(view) {
     var d1,d2;
     var current = $('.current').attr('id');
+    currentNum = $('.current').attr('number');
+    viewNum = $('#' + view).attr('number');
     window.location.hash = view;
     if(current != view) {
-        if((current=='portfolio' && view=='about')||(view=='home')){d1='right';d2='left';} // 'home' view should be opposite
+        if(currentNum > viewNum){d1='right';d2='left';} // 'home' view should be opposite
         else {d1='left'; d2='right';}
         $('.current').hide('slide', {direction: d1}, 1000, function(){
             $('#' + view).show('slide', {direction: d2}, 1000, function(){
